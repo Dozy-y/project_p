@@ -6,28 +6,28 @@ INSERT INTO Employee (
     position, 
     salary
 ) VALUES (
-    'Анна', 
-    'Иванова', 
+    'Anna', 
+    'Ivanova', 
     '1995-03-25', 
     '2023-01-10', 
-    'Тренер', 
+    'Trainer', 
     3000.00
 );
 
 INSERT INTO Employee 
 VALUES (
     DEFAULT, 
-    'Михаил', 
-    'Петров', 
+    'Mikhail', 
+    'Petrov', 
     '1988-07-12', 
     '2020-05-15', 
-    'Менеджер', 
+    'Manager', 
     4500.00, 
-    '+79161234567', 
+    '+123456789', 
     'mikhail.petrov@example.com', 
-    'Москва', 
+    'Moscow', 
     1, 
-    'Тренинг', 
+    'Training', 
     3
 );
 
@@ -36,14 +36,14 @@ SET salary = 3200.00
 WHERE employee_id = 5;
 
 UPDATE Employee
-SET department = 'Младшие тренеры'
-WHERE position = 'Тренер';
+SET department = 'Junior Training'
+WHERE position = 'Trainer';
 
 DELETE FROM Employee
 WHERE employee_id = 10;
 
 DELETE FROM Employee
-WHERE department = 'Архив';
+WHERE department = 'Archive';
 
 SELECT * FROM Employee
 WHERE hire_date > '2020-01-01';
